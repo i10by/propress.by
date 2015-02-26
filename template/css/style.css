@@ -39,7 +39,7 @@ strong {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: normal 13px 'PT Sans', sans-serif;
+  font: normal 13px 'Roboto condensed', sans-serif;
   outline: none;
 }
 html,
@@ -80,6 +80,7 @@ body {
   height: 25px;
   line-height: 25px;
   text-align: center;
+  cursor: default;
 }
 #top-panel .info .phone {
   color: rgba(0, 0, 0, 0.7);
@@ -119,11 +120,92 @@ body {
 #top-menu a.active:not(.special) {
   color: rgba(0, 0, 25, 0.6);
 }
-#top-menu a.special {
+#top-menu a.btn {
   margin-top: 12.5px;
-  height: 35px;
-  line-height: 35px;
   padding: 0 10px;
+  height: 35px;
+  color: #fff;
+  line-height: 35px;
+}
+#top-menu a.btn:hover {
+  color: #fff;
+}
+#top-banner {
+  height: 400px;
+  margin-bottom: -50px;
+  background: url("../images/art.jpg") no-repeat center center;
+}
+#page-body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  min-width: 800px;
+  min-height: 500px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+#page-body .container {
+  overflow: hidden;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+#page-body .container:last-child {
+  border-bottom: 0;
+}
+#page-body .container > .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#page-body .container > .title > .in {
+  display: inline;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+#page-body .block-group {
+  overflow: hidden;
+  padding: 0 50px;
+}
+#page-body .block {
+  width: 33.333333%;
+  float: left;
+}
+#page-body .block > .in {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#page-body .block > .in > .title {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+#page-body .block > .in > .body {
+  min-height: 125px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+}
+#page-body .block > .in > .footer {
+  overflow: hidden;
+}
+#page-body .block > .in > .footer .btn {
+  margin: 0 auto;
+  width: 50%;
+}
+.btn {
+  display: block;
+  border: 0;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 400;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -135,33 +217,25 @@ body {
   -o-transition: background 0.15s ease-in;
   transition: background 0.15s ease-in;
 }
-#top-menu a.special:hover {
+.btn:hover {
   background-color: #8db85f;
 }
-#top-banner {
-  height: 400px;
-  margin-bottom: -50px;
-  background: url("../images/art.jpg") no-repeat center center;
-}
-#top-banner .slogan {
-  width: 700px;
-  margin: 0 auto;
-  padding-top: 177px;
+#bottom-panel {
+  overflow: hidden;
+  margin: 30px 0 20px;
   text-align: center;
-  font: 400 46px 'Lobster';
-  height: 46px;
-  line-height: 46px;
-  color: #fff;
 }
-#page-body {
-  margin: 0 auto 50px;
-  width: 100%;
-  max-width: 1100px;
-  min-width: 800px;
-  height: 500px;
-  padding: 20px;
-  background-color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+#bottom-panel a {
+  display: inline;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-transition: color 0.15s ease-in;
+  -moz-transition: color 0.15s ease-in;
+  -ms-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+}
+#bottom-panel a:hover {
+  color: rgba(0, 0, 0, 0.6);
 }

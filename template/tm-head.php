@@ -16,7 +16,7 @@
             <a href="#">Доставка</a>
         </div>
         <div class="right">
-            <a class="special" href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
         </div>
     </div>
 </div>
